@@ -36,23 +36,53 @@ body {
 }
 
 .textbox i {
-    color: red;
+    color: white;
     font-size: 3.0em;
     margin-top: 130px;
 }
 
 .personal-info-container {
-	background: #000;
+	/*background: #000;*/
 }
 
-#load{
-    width:100px;
-    height:100px;
-    font-size: 2.5em;
-    color: #aaa;
-    margin-top: 22%;
-    margin-left: 50%;
-    position: fixed;
-    z-index:9999;
+.personal-info-content {
+	position: fixed;
+	top: 0;
 }
 
+.personal-info-photo {
+	width: 300px;
+	height: 300px;
+	background: url( '../images/portrait.jpg' );
+	background-size: contain;
+}
+
+.personal-info-name {
+	text-transform: uppercase;
+}
+
+.personal-info-job {
+	text-transform: uppercase;
+}
+
+.personal-info-social-icon {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 26px;
+	cursor: pointer;
+}
+
+.personal-info-social-icon:hover,
+.personal-info-social-icon:active {
+	border-color: #aaa;
+	color: #aaa;
+}
+
+/*skills*/
+.skilss-container {
+	background: red;
+}
