@@ -1,4 +1,6 @@
-
+body {
+	margin: 0px;
+}
 .background-image {
 	background-image: url('../images/background.jpg');
 	width: 100%;
@@ -7,14 +9,40 @@
 	background-position: center;
 }
 
-.title-header {
-	color: red;
+.color-background {
+	width: 100%;
+	height: 100vh;
+	background: rgba(47, 47, 47, 0.8)
 }
 
-/*personal info*/
+.title-header {
+	display: inline-block;
+	color: white;
+	font-size: 60px;
+	margin-top: 70%
+}
+
+.title-description {
+	margin-top: -30px;
+	color: white;
+	font-style: italic;
+}
+
+.textbox {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textbox i {
+    color: white;
+    font-size: 3.0em;
+    margin-top: 130px;
+}
+
 .personal-info-container {
 	/*background: #000;*/
-	height: 800px;
 }
 
 .personal-info-content {
