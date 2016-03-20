@@ -4,17 +4,20 @@
 	<title>Personal CV</title>
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
+	<div id="load"><i class="fa fa-cog fa-spin"></i></div>
+	<div id="contents">
 	<div class="container-fluid">
 		<div class="background-image">
 			<div class="color-background">
-				<p class="title-header">Alex Kashev</p>
-				<p class="title-description">Front End Developer</p>
-				<i class="fa fa-arrow-circle-o-down"></i>
+				<div class="textbox">
+					<p class="title-header">Alex Kashev</p>
+					<p class="title-description">Front End Developer</p>
+					<a href="#"><i class="fa fa-arrow-circle-down"></i></a>
+				</div>		
 			</div>
-=======
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-4 personal-info-container"></div>
@@ -33,11 +36,29 @@
 				Erat velit sit libero quis pellentesque, velit venenatis sapien feugiat imperdiet egestas vel, ac ultricies et viverra tempor sed, fringilla pharetra ullamcorper. Quis feugiat a, wisi wisi. Ac donec in ut dis, venenatis sed arcu diam. Eu lacinia mi elit risus felis nonummy, convallis auctor curabitur sem eget. Nostrud metus, ac sed dictum interdum, neque sed sociosqu nulla, penatibus lectus vel lobortis non ipsum nec. Dui integer nunc ut nostrud sed, et nisl a mauris, turpis etiam in facilis congue, mattis massa, dignissim vivamus cursus. Quis ducimus laoreet nec etiam est massa, fusce rhoncus pede donec vivamus vel, vitae et metus, porttitor est et. Gravida dolor a lacus maiores, class elit donec morbi potenti quisque, egestas amet ut magna penatibus mi fermentum, amet sit penatibus in ante felis. Tristique amet nulla lectus erat, nam condimentum dolor tempus nunc ut accumsan, erat sit et ligula consectetuer rhoncus. Vel quis wisi, in non. Sem mattis ligula justo ut. Quis nam pellentesque amet nunc, at tempus nam congue et scelerisque quis.
 				
 			</div>
->>>>>>> e2329fbb98bcf5afac4f701a13284c561b685b51
 		</div>
 	</div>
+	</div>
+
 
 	<script src="../lib/jQuery/jQuery-1.12.2.min.js"></script>
 	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+
+	document.onreadystatechange = function () {
+		  var state = document.readyState
+		  if (state == 'interactive') {
+		       document.getElementById('contents').style.visibility="hidden";
+		  } else if (state == 'complete') {
+		      setTimeout(function(){
+		         document.getElementById('interactive');
+		         document.getElementById('load').style.visibility="hidden";
+		         document.getElementById('contents').style.visibility="visible";
+		      },1000);
+		  }
+		}
+
+	</script>
 </body>
 </html>
