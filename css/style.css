@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+body {
+	margin: 0px;
+}
 .background-image {
 	background-image: url('../images/background.jpg');
 	width: 100%;
@@ -7,14 +9,15 @@
 	background-position: center;
 }
 
-.title-header {
-	color: red;
-=======
-.personal-info-container {
-	background: #000;
+.color-background {
+	width: 100%;
+	height: 100vh;
+	background: rgba(255,255,255, 0.7);
 }
 
-.skilss-container {
-	background: red;
->>>>>>> e2329fbb98bcf5afac4f701a13284c561b685b51
+.title-header {
+	display: inline-block;
+	color: red;
+	margin: 100px;
+
 }
