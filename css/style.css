@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .background-image {
 	background-image: url('../images/background.jpg');
 	width: 100%;
@@ -8,4 +9,12 @@
 
 .title-header {
 	color: red;
+=======
+.personal-info-container {
+	background: #000;
+}
+
+.skilss-container {
+	background: red;
+>>>>>>> e2329fbb98bcf5afac4f701a13284c561b685b51
 }
