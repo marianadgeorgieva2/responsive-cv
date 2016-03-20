@@ -1,3 +1,7 @@
-div {
-	color: red;
+.personal-info-container {
+	background: #000;
+}
+
+.skilss-container {
+	background: red;
 }
