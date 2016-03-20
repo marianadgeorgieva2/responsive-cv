@@ -18,6 +18,10 @@ body {
 .title-header {
 	display: inline-block;
 	color: red;
-	margin: 100px;
+=======
+.personal-info-container {
+	background: #000;
+	height: 800px;
+}
 
 }
